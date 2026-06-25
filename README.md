@@ -3,7 +3,7 @@
 KeepCalm is a Flutter mobile application prototype designed for adolescents aged 11–15.  
 The application is inspired by the HBSC study, which explores young people's health, habits and well-being.
 
-#Preview and How to Try the App
+# Preview and How to Try the App
 
 This repository contains a functional Flutter prototype of KeepCalm, a mobile application focused on stress and anxiety among adolescents.
 
