@@ -1,82 +1,289 @@
 # KeepCalm
 
-KeepCalm is a Flutter mobile application prototype designed for adolescents aged 11–15.  
-The application is inspired by the HBSC study, which explores young people's health, habits and well-being.
+**KeepCalm** е Flutter мобилна апликација-прототип наменета за млади на возраст од 11 до 15 години.
+Апликацијата е инспирирана од HBSC студијата, која ги истражува здравјето, навиките и добросостојбата на младите.
 
-# Preview and How to Try the App
+Главната цел на KeepCalm е да им помогне на младите секојдневно да го проверат своето расположение, да препознаат колку се под стрес и да добијат кратка персонализирана активност за смирување, наречена **Calm Mission**.
 
-This repository contains a functional Flutter prototype of KeepCalm, a mobile application focused on stress and anxiety among adolescents.
+---
 
-Screenshots of the application are available in the docs/screenshots.
-The app can be tested locally by downloading or cloning this repository and running it with Flutter.
+## Preview и начин на користење
 
-## Project Topic
+Овој репозиториум содржи функционален Flutter prototype на апликацијата **KeepCalm**.
 
-Stress and anxiety among adolescents.
+Во проектот се вклучени:
 
-## Main Idea
+* изворен код од апликацијата,
+* screenshots од главните екрани,
+* video
+* README објаснување,
+* можност за локално стартување преку Flutter.
 
-KeepCalm helps young users check their daily mood, understand their stress level and receive a personalized Calm Mission.  
-The Calm Mission combines simple relaxation techniques and healthy daily habits.
+Screenshots и видеото од апликацијата се поставени во:
 
-## Target Group
+```text
+docs/screenshots
+```
 
-Adolescents aged 11–15, especially students who experience school pressure, stress, anxiety, sleep difficulties or digital overload.
+Апликацијата може да се проба локално со симнување или клонирање на овој репозиториум.
 
-## Problem
+---
 
-Many young people experience school-related stress, emotional pressure, sleep problems, too much screen time and lack of social support.  
-These issues can affect their psychological well-being, concentration and daily habits.
+## Тема на проектот
 
-## Solution
+**Стрес и анксиозност кај млади на возраст од 11 до 15 години**
 
-KeepCalm provides a simple and friendly digital tool where users can:
+Проектот се фокусира на повеќе теми поврзани со добросостојбата на младите:
 
-- choose their daily mood,
-- answer a short stress check,
-- receive a stress level result,
-- get a personalized Calm Mission,
-- complete missions,
-- track recent check-ins,
-- read HBSC-inspired well-being insights.
+* ментално здравје,
+* стрес и анксиозност,
+* училишен притисок,
+* проблеми со спиење,
+* дигитална благосостојба,
+* баланс помеѓу онлајн и офлајн живот,
+* социјална поддршка,
+* здрави дневни навики.
 
-## Features
+---
 
-- Mood selection
-- Daily Calm Check
-- Stress score calculation
-- Low / Medium / High stress result
-- Personalized Calm Mission
-- Breathing and grounding techniques
-- Progress tracking
-- HBSC-inspired insights
-- Calm green and brown UI design
+## Главна идеја
 
-## Stress Score Logic
+KeepCalm е едноставна и пријателска мобилна апликација која им овозможува на младите да направат кратка дневна проверка на својата емоционална состојба.
 
-The app calculates stress using simple prototype logic:
+Апликацијата не прашува само „како се чувствуваш?“, туку врз основа на одговорите пресметува ниво на стрес и предлага персонализирана **Calm Mission**.
 
-- mood,
-- school stress,
-- sleep quality,
-- screen time,
-- social support.
+Основниот тек на користење е:
 
-The result can be:
+1. Корисникот избира како се чувствува денес.
+2. Одговара на краток Daily Calm Check.
+3. Апликацијата пресметува ниво на стрес: Low, Medium или High.
+4. Корисникот добива персонализирана Calm Mission.
+5. Ја завршува мисијата.
+6. Може да го следи својот напредок и последните check-ins.
 
-- Low stress
-- Medium stress
-- High stress
+---
 
-This is not a medical diagnosis. It is a student prototype created for educational purposes.
+## Целна група
 
-## Technologies Used
+Апликацијата е наменета за **млади на возраст од 11 до 15 години**, особено за ученици кои се соочуваат со:
 
-- Flutter
-- Dart
-- Material Design
-- Local state management
+* училишен стрес,
+* анксиозност,
+* лош сон,
+* премногу време поминато на телефон,
+* емоционален притисок,
+* осаменост,
+* тешкотија да зборуваат за своите чувства.
 
-## Expected Impact
+---
 
-The goal of KeepCalm is to support emotional awareness, promote healthier daily habits, encourage stress recognition and motivate young people to seek support when needed.
+## Проблем
+
+Многу млади се соочуваат со училишен притисок, анксиозност, проблеми со спиење, дигитално преоптоварување и недоволна социјална поддршка.
+
+Овие фактори можат да влијаат врз нивното расположение, концентрација, самодоверба и психолошка добросостојба.
+
+KeepCalm го адресира овој проблем преку едноставна дигитална алатка која им помага на младите подобро да ги препознаат своите чувства и да направат мал позитивен чекор кон смирување.
+
+---
+
+## Решение
+
+KeepCalm им овозможува на корисниците:
+
+* да го изберат своето дневно расположение,
+* да одговорат на кратки прашања за стрес, сон, телефон и поддршка,
+* да добијат резултат за нивото на стрес,
+* да добијат персонализирана Calm Mission,
+* да завршуваат кратки активности за смирување,
+* да го следат својот напредок,
+* да прочитаат HBSC-inspired insights поврзани со добросостојбата.
+
+Апликацијата не е медицинска алатка и не поставува дијагноза. Таа е студентски прототип создаден за едукативни цели и за подигнување свесност за менталната добросостојба кај младите.
+
+---
+
+## Главна функционалност: Daily Calm Check
+
+Главната функционалност на апликацијата е **Daily Calm Check**.
+
+Корисникот одговара на прашања како:
+
+* Како се чувствуваш денес?
+* Колку стресен беше твојот училишен ден?
+* Како спиеше минатата ноќ?
+* Колку време помина online?
+* Дали имаш некој со кого можеш да зборуваш?
+
+Потоа апликацијата пресметува едноставен stress score и прикажува едно од трите нивоа:
+
+* **Low Stress**
+* **Medium Stress**
+* **High Stress**
+
+---
+
+## Calm Missions
+
+Според добиениот stress level, апликацијата предлага персонализирана **Calm Mission**.
+
+### Low Stress — Gratitude Reset
+
+* Напиши 3 работи што поминале добро денес.
+* Испрати убава порака на другар/ка.
+* Направи 5 бавни вдишувања пред спиење.
+
+### Medium Stress — Breathe & Unplug
+
+* Направи 2-минутна вежба за дишење.
+* Тргни го телефонот 30 минути пред спиење.
+* Направи кратка прошетка или истегнување.
+
+### High Stress — Ground & Talk
+
+* Направи 5-4-3-2-1 grounding техника.
+* Напиши што те прави да се чувствуваш под стрес.
+* Разговарај со доверлива личност: другар/ка, родител, наставник или училишен советник.
+
+---
+
+## Екрани во апликацијата
+
+Апликацијата содржи неколку главни екрани:
+
+### 1. Home / Mood Check Screen
+
+Корисникот избира како се чувствува денес:
+
+* Happy
+* Okay
+* Stressed
+* Anxious
+* Sad
+
+### 2. Daily Calm Check Screen
+
+Корисникот одговара на кратки прашања за училишен стрес, сон, време поминато online и социјална поддршка.
+
+### 3. Result Screen
+
+Апликацијата го прикажува пресметаното ниво на стрес и кратка поддржувачка порака.
+
+### 4. Calm Mission Screen
+
+Апликацијата прикажува персонализирана активност според нивото на стрес.
+
+### 5. Progress + HBSC Insights Screen
+
+Корисникот може да види:
+
+* број на завршени мисии,
+* број на mood check-ins,
+* последни check-ins,
+* кратки HBSC-inspired insights.
+
+
+
+---
+
+## HBSC инспирација
+
+Проектот е инспириран од HBSC студијата и од теми поврзани со здравјето, навиките и добросостојбата на младите.
+
+KeepCalm обработува теми како:
+
+* ментално здравје,
+* училишен притисок,
+* стрес,
+* спиење,
+* дигитална благосостојба,
+* социјална поддршка,
+* здрави навики,
+* емоционална писменост.
+
+Идејата е овие теми да се претворат во едноставно дигитално решение кое младите можат лесно да го користат.
+
+---
+
+## Технологии
+
+Проектот е изработен со:
+
+* Flutter,
+* Dart,
+* Material Design,
+* Visual Studio Code,
+* local state management.
+
+---
+
+## Техничка реализација
+
+Апликацијата е функционален Flutter prototype.
+
+Во проектот се имплементирани:
+
+* mood selection,
+* Daily Calm Check,
+* пресметка на stress score,
+* Low / Medium / High stress result,
+* персонализирана Calm Mission,
+* progress tracking,
+* reusable UI components,
+* HBSC-inspired insights,
+* calm UI design со нежна зелена, кафеава и cream палета,
+* декоративна background позадина.
+
+---
+
+## Како да се стартува проектот
+
+За да се стартува проектот локално, потребно е да има инсталирано Flutter.
+
+Прво се преземаат dependencies:
+
+```
+flutter pub get
+```
+
+Потоа апликацијата може да се стартува во Chrome:
+
+```
+flutter run -d chrome
+```
+
+Или на поврзан Android emulator / device:
+
+```
+flutter run
+```
+
+За проверка на кодот:
+
+```
+flutter analyze
+```
+
+Моментален статус:
+
+```
+No issues found.
+```
+
+---
+
+## Очекуван impact
+
+Очекуваниот impact на KeepCalm е:
+
+* подобра емоционална свесност,
+* полесно препознавање на стрес,
+* поттикнување здрави дневни навики,
+* подобар баланс помеѓу online и offline живот,
+* охрабрување на младите да побараат поддршка,
+* промовирање психолошка добросостојба.
+
+
+
+
+
